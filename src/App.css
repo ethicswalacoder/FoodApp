@@ -1,38 +1,177 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.container{
+  background-image: linear-gradient(to bottom, #f0dff5, #d5def4, #c6dce4, #c9dcda, #ccd2cc);
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+
+h1{
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Rubik Moonrocks', cursive;
+  font-size: 45px;
+}
+.header-para{
+  font-family: 'Great Vibes', cursive;
+  padding: 10px 100px 10px 100px;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+
+/***search bar***/
+form{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+input{
+  border: 1px solid #cdc8c8;
+  padding: 10px;
+  font-size: 16px;
+}
+ input:focus{
+  outline: none;
+ }
+ .form-control{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 400px;
+
+ }
+ .btn{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+ }
+
+ /**RecipeCard**/
+.recipes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card{
+  width: 250px;
+  background-color: rgb(226, 48, 57);
+  margin: 10px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.card-image{
+  width: 100%;
+  border-radius: 5px 5px 0px 0px ;
+}
+.card-body{
+  padding: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.category{
+  color: #faf5f5;
+  
+}
+h3{
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  background-color: #ffba5a;
+  color: inherit;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/**Footer**/
+.footer{
+  width: 100%;
+  height: 300px;
+  background-image: url("https://thumbs.dreamstime.com/b/vegetables-spices-ingredient-cooking-italian-food-black-wooden-old-board-rustic-style-76334485.jpg");
+  background-size: cover;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.footer-box{
+  width: 100%;
+  height: 235px;
+}
+.left-footer{
+  width: 50%;
+  height: 235px;
+  float: left;
+ 
+}
+.right-footer{
+  width: 50%;
+  height: 230px;
+  float: left; 
+}
+.left-footer ul {
+  padding: 50px 60px;
+}
+.f-title{
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(255, 0, 0);
+  -webkit-text-stroke: 0.4px rgb(16, 16, 16);
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(34, 34, 37), 0 0 0.2em rgb(70, 70, 73);
+}
+.left-footer ul li{
+  margin-left: 30px;
+  color: rgb(255, 0, 0);
+  padding-top: 6px;
+  -webkit-text-stroke: 0.4px rgb(16, 16, 16);
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(34, 34, 37), 0 0 0.2em rgb(70, 70, 73);
+  font-size: 20px;
+  font-weight: 400;
+  list-style: none;
+}
+.right-footer h5{
+  color: #fff;
+  font-size: 20px;
+  padding-top: 70px;
+  margin: 0;
+  padding-left: 30px;
+
+}
+.footer-para{
+  color: #fff;
+  font-size: 17px;
+  margin: 0;
+  padding: 20px 40px 40px 40px;
+  font-family: 'Space Mono', monospace;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.copyright{
+  width: 100%;
+  height: 65px; 
+  background: rgba(18, 18, 18, 0.58);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(18, 18, 18, 0.3);
 }
 
-.App-link {
-  color: #61dafb;
-}
+.copy-para{
+  color: #fff;
+  padding-top: 20px;
+  text-align: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
